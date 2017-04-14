@@ -1,6 +1,6 @@
 import csv
 
-with open('/home/amrit/Desktop/andjs/act.csv', 'rb') as f:
+with open('/home/amrit/Desktop/andjs/data.csv', 'rb') as f:
     reader = csv.reader(f)
     data_as_list = list(reader)
 
@@ -20,6 +20,6 @@ t = matrixTranspose(y)
 map(lambda x: list(sum(x, ())), t)
 z = _
 
-with open("/home/amrit/Desktop/andjs/output.csv", "wb") as f:
+with open("/home/amrit/Desktop/andjs/output2.csv", "wb") as f:
     writer = csv.writer(f)
     writer.writerows(z)
